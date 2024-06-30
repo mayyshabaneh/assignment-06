@@ -35,13 +35,34 @@ class BST :
             print("value doesn't exist")   
 
 
-    def delete(self , node,value):
-        if node.left is None and node .right is None:
-            pass
-        elif node.left is not None or node.right is not None:
-            pass
-        elif node.left is not None and node.right is not None:
-            pass
+    def delete(self, node, value):
+        if node is None:
+            return node
+
+        if value < node.value:
+            node.left = self.delete(node.left, value)
+        elif value > node.value:
+            node.right = self.delete(node.right, value)
+        else:
+            if node.left is None:
+                print("one child deleted")
+                return node.right
+            elif node.right is None:
+                print("one child deleted")
+                return node.left
+            else:
+                # Node has two children
+                curr = self.find_min(node.right)
+                node.value = curr.value
+                node.right = self.delete(node.right, curr.value)
+        return node
+
+    def find_min(self, node):
+        current = node
+        while current.left is not None:
+            current = current.left
+        return current
+
 
     def inorder_traversal(self, root):#time comp = O(N) / N : the number of nodes
         result = []
@@ -113,3 +134,8 @@ binary_search.print2D(binary_search.root)
 print("inorder traversal" , binary_search.inorder_traversal(binary_search.root))
 print("preorder traversal" , binary_search.preorder_traversal(binary_search.root))
 print("postorder traversal" , binary_search.postorder_traversal(binary_search.root))
+
+binary_search.delete(binary_search.root,15)
+print("inorder traversal" , binary_search.inorder_traversal(binary_search.root))
+
+binary_search.print2D(binary_search.root)
