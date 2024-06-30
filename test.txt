@@ -1,0 +1,102 @@
+PS C:\Users\IZtech - MShabaneh\Desktop\assignment6> & "C:/Users/IZtech - MShabaneh/AppData/Local/Programs/Python/Python312/python.exe" "c:/Users/IZtech - MShabaneh/Desktop/assignment6/binary_search.py"
+value exist
+value doesn't exist
+
+                                        70
+
+                              66
+
+                    55
+
+                                        28
+
+                              23
+
+          20
+
+20
+
+                              15
+
+                    6
+
+          5
+
+                    4
+
+                              3
+
+                                        2
+inorder traversal [2, 3, 4, 5, 6, 15, 20, 20, 23, 28, 55, 66, 70]
+preorder traversal [20, 5, 4, 3, 2, 6, 15, 20, 55, 23, 28, 66, 70]
+postorder traversal [2, 3, 4, 15, 6, 5, 28, 23, 70, 66, 55, 20, 20]
+
+                              70
+
+                    66
+
+                                        28
+
+                              23
+
+          20
+
+20
+
+                              15
+
+                    6
+
+          5
+
+                    4
+
+                              3
+
+                                        2
+inorder traversal [2, 3, 4, 5, 6, 15, 20, 20, 23, 28, 66, 70]
+inorder traversal [2, 3, 4, 5, 15, 20, 20, 23, 28, 66, 70]
+
+                              70
+
+                    66
+
+                                        28
+
+                              23
+
+          20
+
+20
+
+                    15
+
+          5
+
+                    4
+
+                              3
+
+                                        2
+inorder traversal [3, 4, 5, 15, 20, 20, 23, 28, 66, 70]
+
+                              70
+
+                    66
+
+                                        28
+
+                              23
+
+          20
+
+20
+
+                    15
+
+          5
+
+                    4
+
+                              3
+PS C:\Users\IZtech - MShabaneh\Desktop\assignment6>
